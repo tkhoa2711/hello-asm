@@ -4,11 +4,11 @@ OBJ=hello.o
 all : $(TARGET)
 
 $(TARGET): $(OBJ)
-    ld -o $@ $(OBJ)
+	ld -o $@ $(OBJ)
 
 %.o: %.s
-    as -gstabs -o $@ $<
+	as -gstabs -o $@ $<
 
 clean:
-    rm *.o
-    rm $(TARGET)
+	rm *.o
+	rm $(TARGET)
